@@ -9,14 +9,15 @@
     /********** Base styles **********/
     * {
       box-sizing: border-box;
+      height: auto;
     }
 
     h1 {
       margin-bottom: 15px;
     }
 
-    p {
-      border: 1px solid black;
+    /* p {
+     
       background-color: #A52A2A;
       width: 90%;
       height: 150px;
@@ -24,11 +25,43 @@
       margin-left: auto;
       font-family: Helvetica;
       color: white;
-    }
+      height: auto;
+    } */
 
-    /* Simple Responsive Framework. */
     .row {
       width: 100%;
+      height: auto;
+   
+    }
+
+    .menu {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      height: 100px;
+      border: 1px solid black;
+    }
+
+    
+    .menu_title {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 20%;
+      height: auto;
+      top: 0px;
+      right: 0px;
+      position: absolute;
+      border: 1px solid black;
+    }
+
+    .menu_content {
+      left:0px;
+      top: 30px;
+      width: 100%;
+      position: absolute;
     }
 
     /********** Large devices only **********/
@@ -47,7 +80,8 @@
       .col-lg-11,
       .col-lg-12 {
         float: left;
-        border: 1px solid green;
+
+        width: 100%;
       }
 
       .col-lg-1 {
@@ -115,7 +149,6 @@
       .col-md-11,
       .col-md-12 {
         float: left;
-        border: 1px solid green;
       }
 
       .col-md-1 {
@@ -174,16 +207,22 @@
 
   <div class="row">
     <div class="col-lg-4 col-md-6">
-      <p>Chicken</p>
-      <p>Item 1</p>
+      <div class="menu">
+        <p class="menu_title">Chicken</p>
+        <p class="menu_content">Item 1</p>
+      </div>
     </div>
     <div class="col-lg-4 col-md-6">
-      <p>Beef</p>
-      <p>Item 2</p>
+      <div class="menu">
+        <p class="menu_title">Beef</p>
+        <p class="menu_content">Item 2</p>
+      </div>
     </div>
     <div class="col-lg-4 col-md-12">
-      <p>Sushi</p>
-      <p>Item 3</p>
+      <div class="menu">
+        <p class="menu_title">Sushi</p>
+        <p class="menu_content">Item 3</p>
+      </div>
     </div>
   </div>
 
