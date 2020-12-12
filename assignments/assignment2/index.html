@@ -4,16 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Responsive Layout</title>
+  <title>Assignment 2</title>
   <style>
     /********** Base styles **********/
     * {
       box-sizing: border-box;
       height: auto;
+      font-family: Helvetica;
     }
 
     h1 {
       margin-bottom: 15px;
+      font-size: 50px;
+      text-align: center;
     }
 
     /* p {
@@ -39,8 +42,10 @@
       margin-left: 10px;
       margin-bottom: 20px;
       position: relative;
-      height: 100px;
+      height: 250px;
       border: 1px solid black;
+      background-color: khaki;
+      overflow: auto;
     }
 
     
@@ -49,23 +54,42 @@
       margin-left: auto;
       margin-top: auto;
       margin-bottom: auto;
-      width: 20%;
+      width: 200px;
       height: auto;
+      text-align: center;
       top: 0px;
       right: 0px;
+      font-size: 30px;
       position: absolute;
       border: 1px solid black;
+
+    }
+
+    .color_background_1 {
+      background-color:darksalmon;
+    }
+
+
+
+    .color_background_2 {
+      background-color:fuchsia;
+    }
+
+    .color_background_3 {
+      background-color:yellow;
     }
 
     .menu_content {
       left:0px;
       top: 30px;
       width: 100%;
+      font-size: 15px;
+      height: auto;
       position: absolute;
     }
 
     /********** Large devices only **********/
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
 
       .col-lg-1,
       .col-lg-2,
@@ -134,7 +158,7 @@
     }
 
     /********** Medium devices only **********/
-    @media (min-width: 992px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 991px) {
 
       .col-md-1,
       .col-md-2,
@@ -203,25 +227,44 @@
 </head>
 
 <body>
-  <h1>Responsive Layout</h1>
+  <h1>Our Menu</h1>
 
   <div class="row">
     <div class="col-lg-4 col-md-6">
       <div class="menu">
-        <p class="menu_title">Chicken</p>
-        <p class="menu_content">Item 1</p>
+        <p class="menu_title color_background_1">Chicken</p>
+        <p class="menu_content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Mauris dictum sollicitudin varius. Duis placerat lorem vel lectus aliquet, 
+          ut mattis risus semper. Duis sem ante, gravida a tortor vel, dictum aliquet est. 
+          Quisque non metus molestie, vulputate velit nec, condimentum lectus. 
+          Etiam accumsan egestas ligula, a ultrices ex fringilla dapibus. Suspendisse ut ullamcorper dui. 
+          Vestibulum faucibus quam ac ante blandit commodo. Nullam bibendum sapien nisi.
+        </p>
       </div>
     </div>
     <div class="col-lg-4 col-md-6">
       <div class="menu">
-        <p class="menu_title">Beef</p>
-        <p class="menu_content">Item 2</p>
+        <p class="menu_title color_background_2">Beef</p>
+        <p class="menu_content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Mauris dictum sollicitudin varius. Duis placerat lorem vel lectus aliquet, 
+          ut mattis risus semper. Duis sem ante, gravida a tortor vel, dictum aliquet est. 
+          Quisque non metus molestie, vulputate velit nec, condimentum lectus. 
+          Etiam accumsan egestas ligula, a ultrices ex fringilla dapibus. Suspendisse ut ullamcorper dui. 
+          Vestibulum faucibus quam ac ante blandit commodo. Nullam bibendum sapien nisi.
+        </p>
       </div>
     </div>
     <div class="col-lg-4 col-md-12">
       <div class="menu">
-        <p class="menu_title">Sushi</p>
-        <p class="menu_content">Item 3</p>
+        <p class="menu_title color_background_3">Sushi</p>
+        <p class="menu_content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Mauris dictum sollicitudin varius. Duis placerat lorem vel lectus aliquet, 
+          ut mattis risus semper. Duis sem ante, gravida a tortor vel, dictum aliquet est. 
+          Quisque non metus molestie, vulputate velit nec, condimentum lectus. 
+          Etiam accumsan egestas ligula, a ultrices ex fringilla dapibus. Suspendisse ut ullamcorper dui. 
+          Vestibulum faucibus quam ac ante blandit commodo. Nullam bibendum sapien nisi.
+        </p>
       </div>
     </div>
   </div>
