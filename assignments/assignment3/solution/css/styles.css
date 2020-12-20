@@ -12,6 +12,10 @@ body {
   border: 0;
 }
 
+#header-nav .container {
+  margin-left: 0;
+}
+
 #logo-img {
   background: url('../images/restaurant-logo_large.png') no-repeat;
   width: 150px;
@@ -28,7 +32,7 @@ body {
   color: #557c3e;
   font-size: 1.5em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold; 
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
@@ -38,15 +42,15 @@ body {
   text-decoration: none;
 }
 .navbar-brand p { /* Kosher cert */
-  color: #000;
+  /* color: #000;
   text-transform: uppercase;
   font-size: .7em;
-  margin-top: 15px;
+  margin-top: 15px; */
 }
 .navbar-brand p span { /* Star-K */
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
-
+/* 
 #nav-list {
   margin-top: 10px;
 }
@@ -59,27 +63,27 @@ body {
 }
 #nav-list a span {
   font-size: 1.8em;
-}
+} */
 
 #phone {
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 #phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
+  /* text-align: right;
+  padding-bottom: 0; */
 }
 #phone div { /* We Deliver */
-  color: #557c3e;
+  /* color: #557c3e;
   text-align: right;
-  padding-right: 15px;
+  padding-right: 15px; */
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  /* border: 1px solid #61122f; */
 }
 .navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+  /* clear: both;
+  margin-top: -30px; */
 }
 /* END HEADER */
 
