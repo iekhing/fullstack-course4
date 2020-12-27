@@ -104,8 +104,8 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
-      console.log("buildAndShowHomeHTML start ");
-      var chosenCategoryShortName = JSON.stringify(chooseRandomCategory(categories));
+      console.log("buildAndShowHomeHTML start ");categories[i].short_name
+      var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
       console.log("chosenCategoryShortName :" + chosenCategoryShortName);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
@@ -130,6 +130,7 @@ function buildAndShowHomeHTML (categories) {
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
+      console.log (homeHtmlToInsertIntoMainPage)
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage)
       
     },
