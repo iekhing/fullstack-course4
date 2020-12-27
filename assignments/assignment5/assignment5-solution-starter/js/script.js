@@ -104,7 +104,7 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
-      console.log("buildAndShowHomeHTML start ");categories[i].short_name
+      console.log("buildAndShowHomeHTML start ");
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
       console.log("chosenCategoryShortName :" + chosenCategoryShortName);
 
