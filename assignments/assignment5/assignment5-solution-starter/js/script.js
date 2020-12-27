@@ -120,9 +120,10 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
       var homeHtmlToInsertIntoMainPage =  
-                                    insertProperty(homeHtmlUrl, 
+                                    insertProperty
+                                    (homeHtmlUrl, 
                                     "randomCategoryShortName",  
-                                    chosenCategoryShortName);
+                                     chosenCategoryShortName);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
@@ -138,8 +139,10 @@ function buildAndShowHomeHTML (categories) {
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
-  var randomArrayIndex = Math.floor(Math.random() * categories.length);
+  console.log("total category " +  categories.length)
 
+  var randomArrayIndex = Math.floor(Math.random() * categories.length);
+  console.log("category choosen "  + randomArrayIndex)
   // return category object with that randomArrayIndex
   return categories[randomArrayIndex];
 }
